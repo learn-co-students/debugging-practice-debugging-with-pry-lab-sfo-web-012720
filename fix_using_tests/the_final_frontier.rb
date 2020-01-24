@@ -4,7 +4,7 @@ end
 
 
 def state_log(star_date)
-  "Captain's Log, star date #{star_date}."
+  p "Captain's Log, star date #{star_date}."
 end
 
 def crew
@@ -12,7 +12,7 @@ def crew
 end
 
 def greet_crew (crew)
-  crew.each {|crew_member| "Hello #{crew_member}."}
+  crew.map {|crew_member| "Hello #{crew_member}."}
 end
 
 def engage
